@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    
+    <!-- <link rel="shortcut icon" href="./images/122.webp" type="image/x-icon" /> -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+   
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid ">
+          <a class="navbar-brand d-flex align-items-center " href="#">
+              <div class="logo"><img src="./images/logo.png" alt="Logo" class=" m-1 "></div>
+              <div class="write"> <h1 class="ms-2 fs-3">Weather</h1>
+                  <p class="ms-2 mb-0 tagline">tagline goes here</p></div>
+             
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNav">
+              <ul class="navbar-nav ms-auto gap-4 fs-4 ">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">News</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Live cameras</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Photos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#Contact">Contact</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+    <section class="search bg-opacity-10">
+      <div class="layer"></div>
+      <div class="container">
+        <h1 class="text-center  fw-bold my-4 position-relative">
+          Search By Country
+        </h1>
+        <div class="form-group mx-auto mb-5">
+          <input
+            class="form-control search-input text-white py-3"
+            type="search"
+            placeholder="find your location..."
+            aria-label="Search" />
+          <button class="btn search-btn p-2" type="submit">Search</button>
+        </div>
+        <h2 class="small text-center fw-bold lg-screen position-relative">
+          <span class="day fs-3"></span> <span class="fs-4 time"> </span>
+        </h2>
+      </div>
+    </section>
+
+    <section class="data py-4">
+      <div class="container">
+        <div
+          class="row forecast-container rounded-4 overflow-hidden"
+          id="rowData"></div>
+      </div>
+    </section>
+
+    <footer id="Contact" class="footer p-5">
+      <div class="container ">
+          <div class="row">
+              <!-- Subscription form -->
+               <div class="footer-content d-flex justify-content-between a">
+                  <div class="col-md-8 ">
+                      <div class="input-group">
+                          <input type="email" class="form-control" placeholder="Enter your email to subscribe...">
+                          <button class="btn btn-primary" type="button">Subscribe</button>
+                      </div>
+                  </div>
+      
+                  <!-- Social Media Icons -->
+                  <div class="social d-flex">
+                      <div class="facebook d-flex justify-content-center align-items-center me-3">
+                        <i class="fa-brands fa-facebook"></i>
+                      </div>
+                      <div class="facebook d-flex justify-content-center align-items-center me-3">
+                        <i class="fa-brands fa-twitter"></i>
+                      </div>
+                      <div class="facebook d-flex justify-content-center align-items-center me-3">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                      </div>
+                      <div class="facebook d-flex justify-content-center align-items-center me-3">
+                        <i class="fa-brands fa-pinterest"></i>
+                      </div>
+          
+              </div>
+      
+               </div>
+              
+          <div class="row mt-3">
+              <div class="col-md-12 ">
+                  <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+  
+    <!-- Scripts Links -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
